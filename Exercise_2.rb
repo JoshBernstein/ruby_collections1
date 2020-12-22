@@ -49,13 +49,18 @@ end
 
 # Display the second item in the list. (Don't forget that arrays indices start at zero!)
 
-puts grocery_list[1]
+# puts grocery_list[1]
 
 # It turns out that everything in this grocery store you're visiting is stored alphabetically, so to better plan out what you need to buy you should sort your grocery list and output it with asterisks again.
 
-grocery_list_abc = grocery_list.sort
+# grocery_list_abc = grocery_list.sort
 
-show_list(grocery_list_abc)
+# show_list(grocery_list_abc)
 
 # After looking everywhere, you can't find the salmon. Delete it from your list and redisplay the list one last time.
+
+grocery_list.delete("salmon")
+
+show_list(grocery_list)
+
 # After you're done, be sure you have everything committed and pushed to your github repo.
