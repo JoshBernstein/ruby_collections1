@@ -14,13 +14,24 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 # You realize you've forgotten some rice, so add it to your list and output it again. 
 
-grocery_list.push("rice")
+# grocery_list.push("rice")
 
-grocery_list.each do |item|
-    puts "*" + " #{item}"
-end
+# grocery_list.each do |item|
+#     puts "*" + " #{item}"
+# end
 
 # Given that you've already output your list twice, it might be good to consider writing a method to do this. Putting frequently used chunks of code in a method lets you reuse them throughout your program without having to type them out over and over.
+
+def add_to_list(list_name, item)
+    list_name.push(item)
+    list_name.each do |item|
+        puts "*" + " #{item}"
+    end
+end
+
+add_to_list(grocery_list, "flour")
+
+
 # You lost count of how many things you need to pick up. Better output the total number of items on your list.
 # Check to see if your list includes "bananas". If it does, output "You need to pick up bananas". Otherwise, output "You don't need to pick up bananas today".
 # Display the second item in the list. (Don't forget that arrays indices start at zero!)
