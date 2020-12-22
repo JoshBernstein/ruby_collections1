@@ -40,14 +40,17 @@ end
 
 # show_list(grocery_list)
 
-if
-    grocery_list.include? "bananas"
-    puts "You don't need to pick up bananas today"
-else
-    puts "You need to pick up bananas"
-end
+# if
+#     grocery_list.include? "bananas"
+#     puts "You don't need to pick up bananas today"
+# else
+#     puts "You need to pick up bananas"
+# end
 
 # Display the second item in the list. (Don't forget that arrays indices start at zero!)
+
+puts grocery_list[1]
+
 # It turns out that everything in this grocery store you're visiting is stored alphabetically, so to better plan out what you need to buy you should sort your grocery list and output it with asterisks again.
 # After looking everywhere, you can't find the salmon. Delete it from your list and redisplay the list one last time.
 # After you're done, be sure you have everything committed and pushed to your github repo.
