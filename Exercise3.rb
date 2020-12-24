@@ -47,9 +47,13 @@ students.each do |name, size|
     students[name] = (size * 1.05).to_i
 end
 
-cohort_size(students)
+# cohort_size(students)
 
 # Delete the 2nd cohort and redisplay the hash.
+
+students.delete(:cohort2)
+
+cohort_size(students)
 
 # BONUS: Calculate the total number of students across all cohorts using each and a variable to keep track of the total. Output the result.
 
