@@ -35,9 +35,11 @@ end
 
 students[:cohort4] = 43
 
-cohort_size(students)
+# cohort_size(students)
 
 # Use the keys method to output all of the cohort names.
+
+puts students.keys
 
 # The classrooms have been expanded! Increase each cohort size by 5% and display the new results.
 
