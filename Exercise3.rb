@@ -1,4 +1,4 @@
-# Create a file named exercise10.rb.
+# Create a file named Exercise3.rb.
 
 # Don't forget to try running your code after each step, and to commit frequently as you work!
 
@@ -29,9 +29,13 @@ def cohort_size(list)
     end
 end
 
-cohort_size(students)
+# cohort_size(students)
 
 # Add cohort 4, which had 43 students, to the hash.
+
+students[:cohort4] = 43
+
+cohort_size(students)
 
 # Use the keys method to output all of the cohort names.
 
