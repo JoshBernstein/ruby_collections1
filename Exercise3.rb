@@ -57,6 +57,14 @@ cohort_size(students)
 
 # BONUS: Calculate the total number of students across all cohorts using each and a variable to keep track of the total. Output the result.
 
+sum = 0
+
+students.each do |name, size|
+    sum += students[name]
+end
+
+puts "The total number of students across all cohorts is #{sum}"
+
 # BONUS: Create another similar hash called staff and display it using the same method.
 
 # After you're done, be sure you have committed and pushed everything to your Github repo.
