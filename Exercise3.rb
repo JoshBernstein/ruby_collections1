@@ -25,7 +25,7 @@ def cohort_size(list)
     # loop through each cohort and print "There are num students in cohortx"
 
     list.each do |name, size|
-        puts "There are #{size} students in #{name}"
+        puts "There are #{size} people in #{name}"
     end
 end
 
@@ -66,5 +66,14 @@ end
 puts "The total number of students across all cohorts is #{sum}"
 
 # BONUS: Create another similar hash called staff and display it using the same method.
+
+staff = {
+    cohort1: 5,
+    cohort2: 7,
+    cohort3: 3,
+    cohort4: 6
+}
+
+cohort_size(staff)
 
 # After you're done, be sure you have committed and pushed everything to your Github repo.
